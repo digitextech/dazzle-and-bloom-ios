@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="socialMedia-cell-reuse-identifier" id="gTV-IL-0wX" customClass="SocialMediaCell" customModule="DAZZLE_AND_BLOOM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="213"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-Ja-f7O">
+                        <rect key="frame" x="10" y="10.000000000000002" width="392" height="17.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-NK-lz2">
+                        <rect key="frame" x="10" y="42.666666666666657" width="392" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4g-Jb-nMr">
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook page link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1B-CT-oKl">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgD-bl-xPD">
+                                        <rect key="frame" x="0.0" y="25.000000000000007" width="181" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ocX-vO-ToQ"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dgD-bl-xPD" firstAttribute="leading" secondItem="n4g-Jb-nMr" secondAttribute="leading" id="0o0-Gk-evO"/>
+                                    <constraint firstItem="j1B-CT-oKl" firstAttribute="top" secondItem="n4g-Jb-nMr" secondAttribute="top" id="7hU-zV-VTX"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1B-CT-oKl" secondAttribute="trailing" id="8r5-xM-uZI"/>
+                                    <constraint firstItem="j1B-CT-oKl" firstAttribute="leading" secondItem="n4g-Jb-nMr" secondAttribute="leading" id="HuF-Z6-L1e"/>
+                                    <constraint firstAttribute="trailing" secondItem="dgD-bl-xPD" secondAttribute="trailing" id="cNn-9I-mtc"/>
+                                    <constraint firstAttribute="bottom" secondItem="dgD-bl-xPD" secondAttribute="bottom" id="wSK-In-HAR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-It-4Vp">
+                                <rect key="frame" x="211" y="0.0" width="181" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter profile link " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFx-bk-1Pw">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmy-jm-pIB">
+                                        <rect key="frame" x="0.0" y="25.000000000000007" width="181" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ggb-Ll-azz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vFx-bk-1Pw" firstAttribute="top" secondItem="xJc-It-4Vp" secondAttribute="top" id="0AM-GA-DKB"/>
+                                    <constraint firstItem="lmy-jm-pIB" firstAttribute="leading" secondItem="xJc-It-4Vp" secondAttribute="leading" id="0Hj-j7-l8b"/>
+                                    <constraint firstItem="vFx-bk-1Pw" firstAttribute="leading" secondItem="xJc-It-4Vp" secondAttribute="leading" id="KMj-as-T4L"/>
+                                    <constraint firstAttribute="bottom" secondItem="lmy-jm-pIB" secondAttribute="bottom" id="P4f-iT-a0X"/>
+                                    <constraint firstAttribute="trailing" secondItem="vFx-bk-1Pw" secondAttribute="trailing" id="tLU-jG-g7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="lmy-jm-pIB" secondAttribute="trailing" id="w0j-8X-kCp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="KV8-Fd-Cgl"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zX3-ex-Cnh">
+                        <rect key="frame" x="10" y="117.66666666666669" width="392" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-by-wXI">
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube Channel link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sII-AJ-IWm">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCI-2N-d0V">
+                                        <rect key="frame" x="0.0" y="24.999999999999986" width="181" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="bSl-fZ-yYA"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XCI-2N-d0V" secondAttribute="trailing" id="0Hv-zP-2g9"/>
+                                    <constraint firstItem="sII-AJ-IWm" firstAttribute="top" secondItem="lZR-by-wXI" secondAttribute="top" id="IVW-jx-CFX"/>
+                                    <constraint firstItem="XCI-2N-d0V" firstAttribute="leading" secondItem="lZR-by-wXI" secondAttribute="leading" id="dJo-dl-iwq"/>
+                                    <constraint firstAttribute="trailing" secondItem="sII-AJ-IWm" secondAttribute="trailing" id="iMP-0c-JXN"/>
+                                    <constraint firstItem="sII-AJ-IWm" firstAttribute="leading" secondItem="lZR-by-wXI" secondAttribute="leading" id="pui-oW-tYX"/>
+                                    <constraint firstAttribute="bottom" secondItem="XCI-2N-d0V" secondAttribute="bottom" id="qSg-rM-yyc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcF-tW-uTi">
+                                <rect key="frame" x="211" y="0.0" width="181" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instragram profile link " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-8o-ZVV">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DV8-8s-BaJ">
+                                        <rect key="frame" x="0.0" y="24.999999999999986" width="181" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="KT9-PD-xOR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6xw-8o-ZVV" firstAttribute="leading" secondItem="vcF-tW-uTi" secondAttribute="leading" id="1ef-LX-lxb"/>
+                                    <constraint firstItem="6xw-8o-ZVV" firstAttribute="top" secondItem="vcF-tW-uTi" secondAttribute="top" id="2RJ-Xk-L4S"/>
+                                    <constraint firstAttribute="bottom" secondItem="DV8-8s-BaJ" secondAttribute="bottom" id="61s-hh-6n5"/>
+                                    <constraint firstAttribute="trailing" secondItem="6xw-8o-ZVV" secondAttribute="trailing" id="ANi-6z-iJi"/>
+                                    <constraint firstItem="DV8-8s-BaJ" firstAttribute="leading" secondItem="vcF-tW-uTi" secondAttribute="leading" id="ccr-Jv-gYS"/>
+                                    <constraint firstAttribute="trailing" secondItem="DV8-8s-BaJ" secondAttribute="trailing" id="enk-Xd-xS7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Cj5-Re-0oD"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SBF-Ja-f7O" secondAttribute="trailing" constant="10" id="B0f-sb-pIT"/>
+                <constraint firstItem="zX3-ex-Cnh" firstAttribute="leading" secondItem="aTQ-NK-lz2" secondAttribute="leading" id="Bai-Na-z6a"/>
+                <constraint firstItem="zX3-ex-Cnh" firstAttribute="trailing" secondItem="aTQ-NK-lz2" secondAttribute="trailing" id="RFw-cd-32u"/>
+                <constraint firstItem="zX3-ex-Cnh" firstAttribute="top" secondItem="aTQ-NK-lz2" secondAttribute="bottom" constant="15" id="UXg-Rh-LJ6"/>
+                <constraint firstAttribute="trailing" secondItem="aTQ-NK-lz2" secondAttribute="trailing" constant="10" id="Xai-JG-uxO"/>
+                <constraint firstItem="aTQ-NK-lz2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="YGm-Yb-FXD"/>
+                <constraint firstItem="SBF-Ja-f7O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Zw3-si-8ce"/>
+                <constraint firstItem="aTQ-NK-lz2" firstAttribute="top" secondItem="SBF-Ja-f7O" secondAttribute="bottom" constant="15" id="eFY-MB-FPe"/>
+                <constraint firstItem="SBF-Ja-f7O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="zwv-pa-FQR"/>
+            </constraints>
+            <size key="customSize" width="412" height="213"/>
+            <connections>
+                <outlet property="facebooktxtField" destination="dgD-bl-xPD" id="mGx-8r-dTj"/>
+                <outlet property="instragramtxtField" destination="DV8-8s-BaJ" id="hCX-ku-kOn"/>
+                <outlet property="twittertxtField" destination="lmy-jm-pIB" id="qiG-TT-88h"/>
+                <outlet property="youtubetxtField" destination="XCI-2N-d0V" id="Mqp-cX-Q4Q"/>
+            </connections>
+            <point key="canvasLocation" x="190.76923076923077" y="78.554502369668242"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RightViewCell" rowHeight="163" id="KGk-i7-Jjw" customClass="RightViewCell" customModule="DAZZLE_AND_BLOOM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zdE-eU-tih">
+                        <rect key="frame" x="10" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Wd4-it-sUK"/>
+                            <constraint firstAttribute="width" constant="40" id="Ze9-YC-Js3"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPO-fw-HC9">
+                        <rect key="frame" x="80" y="20" width="318" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 19, 2022 2:54 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR4-Ln-wz1">
+                                <rect key="frame" x="128" y="10" width="178" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dibyajyoti" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKv-5j-Eq2">
+                                <rect key="frame" x="12" y="10" width="100" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1UV-PR-HoI"/>
+                                    <constraint firstAttribute="height" constant="14.5" id="xZa-aD-kQE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes djndjfd jnfsd jksdfnsjdf jdskfsdfs dfjsdf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dct-HG-Wh3">
+                                <rect key="frame" x="12" y="54.5" width="291" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dct-HG-Wh3" firstAttribute="leading" secondItem="rKv-5j-Eq2" secondAttribute="leading" id="1nu-v1-PwY"/>
+                            <constraint firstAttribute="bottom" secondItem="dct-HG-Wh3" secondAttribute="bottom" constant="30" id="6nL-RL-jpQ"/>
+                            <constraint firstItem="rKv-5j-Eq2" firstAttribute="leading" secondItem="aPO-fw-HC9" secondAttribute="leading" constant="12" id="F5z-mi-jxn"/>
+                            <constraint firstAttribute="trailing" secondItem="dct-HG-Wh3" secondAttribute="trailing" constant="15" id="Gtj-p8-PpV"/>
+                            <constraint firstItem="dct-HG-Wh3" firstAttribute="top" secondItem="QR4-Ln-wz1" secondAttribute="bottom" constant="30" id="HzS-71-lwp"/>
+                            <constraint firstItem="rKv-5j-Eq2" firstAttribute="top" secondItem="aPO-fw-HC9" secondAttribute="top" constant="10" id="IRX-8T-qJc"/>
+                            <constraint firstItem="QR4-Ln-wz1" firstAttribute="centerY" secondItem="rKv-5j-Eq2" secondAttribute="centerY" id="QRA-yF-wUv"/>
+                            <constraint firstItem="QR4-Ln-wz1" firstAttribute="leading" secondItem="rKv-5j-Eq2" secondAttribute="trailing" constant="16" id="SWv-Kd-GN1"/>
+                            <constraint firstAttribute="trailing" secondItem="QR4-Ln-wz1" secondAttribute="trailing" constant="12" id="orI-H3-Q4T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aPO-fw-HC9" secondAttribute="bottom" constant="20" id="4zJ-QB-ur4"/>
+                    <constraint firstItem="zdE-eU-tih" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Qmf-Gf-Xxl"/>
+                    <constraint firstAttribute="trailing" secondItem="aPO-fw-HC9" secondAttribute="trailing" constant="12" id="Wcx-9k-sAN"/>
+                    <constraint firstItem="aPO-fw-HC9" firstAttribute="leading" secondItem="zdE-eU-tih" secondAttribute="trailing" constant="30" id="hTA-o4-xN9"/>
+                    <constraint firstItem="aPO-fw-HC9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="iUl-DP-NLH"/>
+                    <constraint firstItem="zdE-eU-tih" firstAttribute="top" secondItem="aPO-fw-HC9" secondAttribute="top" id="w9e-3w-RXl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorNameLbl" destination="rKv-5j-Eq2" id="KnN-n8-BKA"/>
+                <outlet property="author_Icon" destination="zdE-eU-tih" id="H5a-BB-UpR"/>
+                <outlet property="author_date" destination="QR4-Ln-wz1" id="iZc-O5-zdO"/>
+                <outlet property="messageContainerView" destination="aPO-fw-HC9" id="D2D-ca-Fxn"/>
+                <outlet property="textMessageLabel" destination="dct-HG-Wh3" id="LKJ-wX-kIo"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="141.62946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_icon" width="24" height="24"/>
+    </resources>
+</document>

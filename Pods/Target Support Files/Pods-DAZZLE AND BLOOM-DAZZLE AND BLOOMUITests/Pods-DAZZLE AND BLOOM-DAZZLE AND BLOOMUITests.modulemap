@@ -1,0 +1,6 @@
+framework module Pods_DAZZLE_AND_BLOOM_DAZZLE_AND_BLOOMUITests {
+  umbrella header "Pods-DAZZLE AND BLOOM-DAZZLE AND BLOOMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

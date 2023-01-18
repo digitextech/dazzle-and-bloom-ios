@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="package-item-cell-reuse-identifier" id="gTV-IL-0wX" customClass="PackageDisplayCell" customModule="DAZZLE_AND_BLOOM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Package" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LL9-lJ-LGL">
+                        <rect key="frame" x="15" y="10" width="352" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its free, lets get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71S-Mi-qsx">
+                        <rect key="frame" x="15" y="38.5" width="352" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: £0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCa-5E-InR">
+                        <rect key="frame" x="15" y="59" width="352" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdo-QK-bmZ">
+                        <rect key="frame" x="0.0" y="97" width="367" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eNb-Xr-HCQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="71S-Mi-qsx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Bec-yJ-EVp"/>
+                <constraint firstAttribute="trailing" secondItem="Mdo-QK-bmZ" secondAttribute="trailing" id="KpR-vU-oDc"/>
+                <constraint firstItem="LL9-lJ-LGL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="NIg-nd-53G"/>
+                <constraint firstItem="71S-Mi-qsx" firstAttribute="top" secondItem="LL9-lJ-LGL" secondAttribute="bottom" constant="5" id="NfJ-X2-km7"/>
+                <constraint firstAttribute="trailing" secondItem="LL9-lJ-LGL" secondAttribute="trailing" id="V1r-OM-8io"/>
+                <constraint firstAttribute="trailing" secondItem="71S-Mi-qsx" secondAttribute="trailing" id="XTE-Wn-7zb"/>
+                <constraint firstItem="Mdo-QK-bmZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YSa-Dn-pwH"/>
+                <constraint firstAttribute="bottom" secondItem="Mdo-QK-bmZ" secondAttribute="bottom" id="bwI-HR-DsU"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="DCa-5E-InR" secondAttribute="trailing" id="f5j-Ok-9Gk"/>
+                <constraint firstItem="DCa-5E-InR" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="15" id="iiJ-IG-695"/>
+                <constraint firstItem="DCa-5E-InR" firstAttribute="top" secondItem="71S-Mi-qsx" secondAttribute="bottom" constant="5" id="jgq-tZ-woG"/>
+                <constraint firstItem="LL9-lJ-LGL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="wfy-mj-k2w"/>
+            </constraints>
+            <size key="customSize" width="367" height="98"/>
+            <point key="canvasLocation" x="290.57971014492756" y="61.607142857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>

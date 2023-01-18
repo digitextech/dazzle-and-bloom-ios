@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="product-details-pic-cell-reuse-identifier" id="gTV-IL-0wX" customClass="ItemDetailsPicCell" customModule="DAZZLE_AND_BLOOM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="522"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="522"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cka-Zi-NQH">
+                        <rect key="frame" x="0.0" y="0.0" width="489" height="522"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-b2-RcK">
+                        <rect key="frame" x="439" y="101" width="30" height="28.666666666666671"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-1f-KVq">
+                        <rect key="frame" x="439" y="51.666666666666671" width="30" height="27.000000000000007"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Slb-Sy-plS"/>
+                            <constraint firstAttribute="width" constant="30" id="hft-r5-PY3"/>
+                        </constraints>
+                    </imageView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5kp-Cd-Mwx">
+                        <rect key="frame" x="186.66666666666666" y="446" width="115.99999999999997" height="26"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cka-Zi-NQH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8HR-8p-FpJ"/>
+                <constraint firstItem="5kp-Cd-Mwx" firstAttribute="centerX" secondItem="cka-Zi-NQH" secondAttribute="centerX" id="BXE-e6-9BG"/>
+                <constraint firstItem="i0l-1f-KVq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="50" id="E6F-fy-5Ug"/>
+                <constraint firstAttribute="bottom" secondItem="cka-Zi-NQH" secondAttribute="bottom" id="FFK-DP-eRJ"/>
+                <constraint firstAttribute="trailing" secondItem="i0l-1f-KVq" secondAttribute="trailing" constant="20" id="MdC-84-3aQ"/>
+                <constraint firstAttribute="trailing" secondItem="cka-Zi-NQH" secondAttribute="trailing" id="Ouw-Dw-WYD"/>
+                <constraint firstItem="cka-Zi-NQH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QD5-Aa-tHg"/>
+                <constraint firstItem="mPP-b2-RcK" firstAttribute="centerX" secondItem="i0l-1f-KVq" secondAttribute="centerX" id="Rzb-55-BHn"/>
+                <constraint firstItem="mPP-b2-RcK" firstAttribute="top" secondItem="i0l-1f-KVq" secondAttribute="bottom" constant="20" id="fSj-wz-Qxa"/>
+                <constraint firstItem="mPP-b2-RcK" firstAttribute="height" secondItem="i0l-1f-KVq" secondAttribute="height" id="grl-bX-R70"/>
+                <constraint firstItem="mPP-b2-RcK" firstAttribute="width" secondItem="i0l-1f-KVq" secondAttribute="width" id="ltG-l5-HF1"/>
+                <constraint firstAttribute="bottom" secondItem="5kp-Cd-Mwx" secondAttribute="bottom" constant="50" id="wbB-jH-pb6"/>
+            </constraints>
+            <size key="customSize" width="489" height="522"/>
+            <connections>
+                <outlet property="fabIcon" destination="mPP-b2-RcK" id="rO2-3V-wx3"/>
+                <outlet property="outerContainView" destination="cka-Zi-NQH" id="MwC-2t-3OO"/>
+                <outlet property="pageControl" destination="5kp-Cd-Mwx" id="2KN-Pv-xdK"/>
+                <outlet property="shareIcon" destination="i0l-1f-KVq" id="aCZ-7i-CY4"/>
+            </connections>
+            <point key="canvasLocation" x="322.30769230769232" y="60.426540284360186"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_DAZZLE_AND_BLOOM {
+  umbrella header "Pods-DAZZLE AND BLOOM-umbrella.h"
+
+  export *
+  module * { export * }
+}
